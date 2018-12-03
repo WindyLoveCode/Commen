@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 
+
+def AAVersion = '4.4.0'
+
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -9,6 +12,13 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // 添加下面这一段到defaultConfig下面
+        javaCompileOptions {
+            annotationProcessorOptions {
+                //这里的包名和applicationId一致
+               arguments = ['resourcePackageName': "com.bjx.com.commen"]
+            }
+        }
     }
     buildTypes {
         release {
@@ -20,6 +30,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
+    implementation "org.androidannotations:androidannotations-api:$AAVersion"
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'

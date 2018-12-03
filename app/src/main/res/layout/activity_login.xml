@@ -46,8 +46,8 @@
                 android:paddingLeft="13dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_marginRight="15dp"
                     android:src="@drawable/ic_mobile_flag" />
 
@@ -88,8 +88,8 @@
                 android:paddingLeft="13dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_marginRight="15dp"
                     android:src="@drawable/ic_password_flag" />
 
@@ -135,7 +135,7 @@
                 android:gravity="center"
                 >
                 <CheckBox
-                    android:id="@+id/checkBox_password"
+                    android:id="@+id/check_login_password"
                     android:padding="10dp"
                     android:textSize="14dp"
                     android:layout_gravity="center"
@@ -145,7 +145,7 @@
                     android:text="记住密码"
                     android:textColor="@color/color_FF8800" android:checked="false"/>
                 <CheckBox
-                    android:id="@+id/checkBox_login"
+                    android:id="@+id/check_login_login"
                     android:padding="10dp"
                     android:textSize="14dp"
                     android:layout_gravity="center"
@@ -163,7 +163,7 @@
                 android:background="@color/color_eeeeee" />
 
             <Button
-                android:id="@+id/btn_login"
+                android:id="@+id/btn_login_go"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginBottom="10dp"
@@ -177,7 +177,7 @@
             android:orientation="horizontal"
             android:layout_height="wrap_content">
             <TextView
-            android:id="@+id/regist"
+            android:id="@+id/text_login_regist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -187,7 +187,7 @@
             android:textColor="@color/color_b0b8b2"
             android:textSize="14dp" />
             <TextView
-            android:id="@+id/forget_password"
+            android:id="@+id/text_login_forget"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
